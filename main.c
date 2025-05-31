@@ -10,7 +10,7 @@
 #define width 80
 #define height 24
 /* microseconds */
-#define sleep_time 100000
+#define sleep_time 200000
 
 #define A '#' // alive cell
 #define D ' ' // dead cell
@@ -18,19 +18,19 @@
 // clang-format off
 static char screen_buffer[width * height] = {
       "                                                                                "
-      "                                                                                "
+      "                                                            ###   ###           "
       "                               #                                                "
-      "                             # #                                                "
-      "                   ##      ##            ##                                     "
-      "                  #   #    ##            ##                                     "
-      "       ##        #     #   ##                                                   "
+      "                             # #                          #    # #    #         "
+      "                   ##      ##            ##               #    # #    #         "
+      "                  #   #    ##            ##               #    # #    #         "
+      "       ##        #     #   ##                               ###   ###           "
       "       ##        #   # ##    # #                                                "
-      "                 #     #       #                                                "
-      "                  #   #                                                         "
-      "                   ##                                                           "
+      "                 #     #       #                            ###   ###           "
+      "                  #   #                                   #    # #    #         "
+      "                   ##                                     #    # #    #         "
+      "                                                          #    # #    #         "
       "                                                                                "
-      "                                                                                "
-      "                                                                                "
+      "                                                            ###   ###           "
       "                                                                                "
       "                                                                                "
       "                                                                                "
